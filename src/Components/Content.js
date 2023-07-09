@@ -8,12 +8,9 @@ import {
 } from "react-share";
 import { BsFacebook, BsWhatsapp, BsTwitter, BsThreeDots } from "react-icons/bs";
 import CopyToClipboard from "react-copy-to-clipboard";
-import { ToastContainer, toast } from "react-toastify";
 
 const Content = () => {
-  {
-    /* for modal open and close */
-  }
+  /* for modal open and close */
   const [isOpen, setIsOpen] = useState(false);
   const handleOpen = () => {
     setIsOpen(true);
@@ -23,9 +20,8 @@ const Content = () => {
     setIsOpen(false);
   };
 
-  {
-    /* fetching random image */
-  }
+  /* fetching random image */
+
   const [randomImage, setRandomImage] = useState("");
 
   useEffect(() => {
@@ -38,9 +34,8 @@ const Content = () => {
     });
   };
 
-  {
-    /*handle copy */
-  }
+  /*handle copy */
+
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
